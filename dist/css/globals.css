@@ -8,3 +8,21 @@
     list-style: none;
     position: relative;
 }
+
+body,
+a {
+    font-family: var(--ff);
+    color: var(--color-text);
+}
+
+label {
+    font-size: var(--fs-small);
+    margin-bottom: 7px;
+}
+
+h2 {
+    font-size: var(--fs-big);
+    font-weight: 500;
+}
+
+

@@ -3,23 +3,6 @@
 @import url('card.css');
 
 
-
-body,
-a {
-    font-family: var(--ff);
-    color: var(--color-text);
-}
-
-label {
-    font-size: var(--fs-small);
-    margin-bottom: 7px;
-}
-
-h2 {
-    font-size: var(--fs-big);
-    font-weight: 500;
-}
-
 .content {
     padding-top: 60px;
     min-height: 100vh;
@@ -80,7 +63,8 @@ h2 {
 }
 
 .nav-list {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     margin: 0 auto 98px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,8 +85,10 @@ h2 {
     border-radius: 4px;
 }
 
-section, main {
-    margin: 0 auto 98px;
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-1 > div {
@@ -138,29 +124,35 @@ section, main {
     margin-bottom: 1.3rem;
 }
 
-.section-1 form {
+.first-form, .friend-field {
+    width: 100%;
+    max-width: 340px;
+}
+
+
+.first-form {
     margin-bottom: 98px;
 }
 
-.section-form div {
-    margin-bottom: 20px;
-}
-
-.section-form label:not(.genero), .section-form input:not([type="radio"]):not(.btn-friend) {
+.first-form label:not(.genero), .first-form input:not([type="radio"]) {
     display: block;
     width: 100%;
 }
 
-.section-form input#feminino  {
+.first-form input, .second-form .friend-field {
+    margin-bottom: 20px;
+}
+
+.first-forminput#feminino  {
     margin-left: 40px;
 }
 
-.section-form input:not([type="radio"]) {
+.first-form input:not([type="radio"]), .second-form input:not(.btn-friend) {
     border: 1px solid var(--color-bc-dark);
     padding: 7px 1em;
 }
 
-.section-form .submit-btn {
+.first-form .submit-btn {
     cursor: pointer;
     background-color: transparent;
     font-size: var(--fs-medium);
@@ -168,9 +160,27 @@ section, main {
     border-radius: 4px;
 }
 
-.section-form input[type="submit"]:hover, .btn:hover {
+.first-form input[type="submit"]:hover, .btn:hover {
     opacity: .75;
 }
+
+.second-form{
+    width: 100%;
+}
+
+.second-form .friend-field {
+    margin: 0 auto;
+}
+
+.second-form label {
+    display: block;
+}
+
+.second-form input:not(.btn-friend) {
+    width: 100%;
+}
+
+
 
 .content__title {
     font-size: var(--fs-medium);
@@ -214,10 +224,153 @@ section, main {
     font-weight: 100;
     margin: 0 auto;
     padding: 7px 0;
-    width: 260px;
-    margin: 23px auto 31px;
+    width: 100%;
+    max-width: 260px;
+    margin: 33px auto 129px;
 }
 
 .btn-friend {
     margin-top: 42px;
+}
+
+
+@media (min-width: 431px) {
+    .content__title {
+        margin-bottom: 35px;
+    }
+
+    .list-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card {
+        margin-bottom: 35px;
+        max-width: 200px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    .card-body {
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .card-body > *:not(.btn-card) {
+        margin-bottom: 5px;
+    }
+
+    .product-name {
+        margin-top: 15px;
+    }
+
+    .product-description {
+        display: inline;
+    }
+}
+
+@media (min-width: 457px) {
+    .section-1__text {
+        overflow: visible;
+    }
+
+    .fa-chevron-up {
+        display: none;
+    }
+}
+
+@media (min-width: 685px) {
+
+    .content__text {
+        margin: 39px 0;
+    }
+
+    .friend-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .friend-field {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .friend-field + .friend-field {
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 842px) {
+
+    .content::before {
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0 45%);
+    }
+
+    .content::after {
+        min-height: 265px;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+    
+    .separador{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .intro {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .intro h1 {
+        margin-bottom: 24px;
+    }
+
+    .nav-list {
+        max-width: 82%;
+        margin: 0 auto 98px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-content: center;
+    }
+
+    .nav-item a + .nav-item a {
+        margin-left: 5px;
+    } 
+
+    .section-1__content{
+        width: 60%;
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+
+    .list-cards {
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+    }
+
+    .last-section {
+        margin-bottom: 135px;
+    }
+
+    .footer-content {
+        padding: 71px 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 65%;
+    }
+    
+    .separador{
+        max-width: 65%;
+        margin: 0 auto;
+    }
 }
