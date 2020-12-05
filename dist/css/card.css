@@ -1,7 +1,6 @@
 .list-cards {
     display: grid;
     grid-template-columns: 1fr;
-    /* justify-items: center; */
 }
 
 .card {
@@ -70,4 +69,35 @@
 
 .product-parceled {
     font-size: var(--fs-x-small);
+}
+
+@media (min-width: 431px) {
+
+    .list-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card {
+        margin-bottom: 35px;
+        max-width: 200px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    .card-body {
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .card-body > *:not(.btn-card) {
+        margin-bottom: 5px;
+    }
+
+    .product-name {
+        margin-top: 15px;
+    }
+
+    .product-description {
+        display: inline;
+    }
 }

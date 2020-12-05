@@ -364,13 +364,13 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 950px) {
     .container {
-        max-width: 65%;
+        max-width: 920px;
     }
     
     .separador{
-        max-width: 65%;
+        max-width: 920px;
         margin: 0 auto;
     }
 }

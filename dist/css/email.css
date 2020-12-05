@@ -1,0 +1,103 @@
+@import url('variables.css');
+@import url('globals.css');
+@import url('card.css');
+
+
+.content {
+    padding-top: 31px;
+}
+
+/* first polygon at top background */
+.content::before {
+    content: '';
+    background-color: var(--color-bc-dark);
+    min-height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 42%, 0 35%);
+}
+
+/* last polygon at bottom background */
+.content::after {
+    content: '';
+    background-color: var(--color-bc-dark);
+    min-height: 165px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 35%, 100% 5%, 100% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+
+.intro {
+    text-align: center;
+    margin: 0 0 58px;
+    color: var(--color-bc-white);
+}
+
+.intro h1 {
+    font-size: var(--fs-x-big);
+}
+
+.intro p {
+    display: inline-block;
+    font-size: var(--fs-small);
+    width: 67%;
+    margin-top: 9px;
+}
+
+.main__content h2 {
+    font-size: var(--fs-big);
+}
+
+.main__content p {
+    font-size: var(--fs-x-small);
+    margin: 0.8em 0 1em;
+}
+
+main .list-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+
+.footer-content {
+    font-size: var(--fs-x-small);
+    padding: 71px 50px 30px;
+    color: var(--color-bc-white);
+    text-align: center;
+}
+
+.footer-content p:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.btn {
+    display: block;
+    background-color: transparent;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    color: var(--color-text);
+    cursor: pointer;
+    font-size: var(--fs-medium);
+    font-weight: 100;
+    padding: 7px 0;
+    width: 100%;
+    max-width: 383px;
+    margin: 33px auto 49px;
+}
+
+.btn-friend {
+    margin-top: 42px;
+}
+
