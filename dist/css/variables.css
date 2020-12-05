@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/helveticaneue-regular.ttf')
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    src: url('fonts/helveticaneue-bold.ttf')
+}
+
+
+:root {
+    /* COLORS */
+    --color-bc-dark: #707070;
+    --color-bc-white: #fff;
+    --color-text: #888;
+
+    /* FONT */
+    --ff: 'Helvetica Neue';
+
+    /* FONT-SIZE */
+    --fs-x-big: 2.5rem;
+    --fs-big: 1.25rem;
+    --fs-medium: 1.125rem;
+    --fs-default: 1rem;
+    --fs-small: 0.875rem;
+    --fs-x-small: 0.75rem;
+}
