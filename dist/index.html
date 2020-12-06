@@ -3,6 +3,7 @@
 
 <head>
     <title>Desafio - Frontend Developer</title>
+    <link rel="icon" type="image/png" href="css/icons/linx-16x16.png"/>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,8 @@
 </head>
 
 <body>
-    <div class="content">
-        <header class="container">
+    <div id="content" class="content">
+        <header class="container header">
             <div class="intro">
                 <h2>uma seleção de produtos</h2>
                 <h1>especial para você</h1>
@@ -83,113 +84,10 @@
         <main class="container">
             <h3 class="content__title">Sua seleção especial</h3>
             <main id="produtos" class="list-cards">
-                <!-- Model for card product -->
-                <div class="card">
-                    <div class="product-image">
-                    </div>
-                    <div class="card-body">
-                        <p class="product-name">Nome do produto</p>
-                        <p class="product-description">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p class="product-from">De: R$23,99</p>
-                        <p class="product-to">Por: R$19,99</p>
-                        <p class="product-parceled">ou 2x de R$9,99</p>
-                        <a href="#productpagebyid" class="btn-card">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="product-image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="product-name">Nome do produto</p>
-                        <p class="product-description">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p class="product-from">De: R$23,99</p>
-                        <p class="product-to">Por: R$19,99</p>
-                        <p class="product-parceled">ou 2x de R$9,99</p>
-                        <a href="#productpagebyid" class="btn-card">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="product-image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="product-name">Nome do produto</p>
-                        <p class="product-description">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p class="product-from">De: R$23,99</p>
-                        <p class="product-to">Por: R$19,99</p>
-                        <p class="product-parceled">ou 2x de R$9,99</p>
-                        <a href="#productpagebyid" class="btn-card">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="product-image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="product-name">Nome do produto</p>
-                        <p class="product-description">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p class="product-from">De: R$23,99</p>
-                        <p class="product-to">Por: R$19,99</p>
-                        <p class="product-parceled">ou 2x de R$9,99</p>
-                        <a href="#productpagebyid" class="btn-card">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="product-image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="product-name">Nome do produto</p>
-                        <p class="product-description">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p class="product-from">De: R$23,99</p>
-                        <p class="product-to">Por: R$19,99</p>
-                        <p class="product-parceled">ou 2x de R$9,99</p>
-                        <a href="#productpagebyid" class="btn-card">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="product-image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="product-name">Nome do produto</p>
-                        <p class="product-description">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p class="product-from">De: R$23,99</p>
-                        <p class="product-to">Por: R$19,99</p>
-                        <p class="product-parceled">ou 2x de R$9,99</p>
-                        <a href="#productpagebyid" class="btn-card">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="product-image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="product-name">Nome do produto</p>
-                        <p class="product-description">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p class="product-from">De: R$23,99</p>
-                        <p class="product-to">Por: R$19,99</p>
-                        <p class="product-parceled">ou 2x de R$9,99</p>
-                        <a href="#productpagebyid" class="btn-card">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="product-image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="product-name">Nome do produto</p>
-                        <p class="product-description">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p class="product-from">De: R$23,99</p>
-                        <p class="product-to">Por: R$19,99</p>
-                        <p class="product-parceled">ou 2x de R$9,99</p>
-                        <a href="#productpagebyid" class="btn-card">Comprar</a>
-                    </div>
-                </div>
+                <!-- place for cards products -->
+                
             </main>
-            <button class="btn">Ainda mais produtos aqui!</button>
+            <button class="btn" data-event>Ainda mais produtos aqui!</button>
 
         </main>
 
@@ -222,6 +120,8 @@
                 <p>2019</p>
             </div>
         </footer>
+        <a href="emailversion.html" class="another-page__link">Go to E-mail Version</a>
+        <a href="#content" class="btn-fixed">^</a>
     </div>
 </body>
 

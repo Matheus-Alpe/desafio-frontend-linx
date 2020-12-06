@@ -26,3 +26,10 @@ h2 {
 }
 
 
+.another-page__link {
+    background-color: #333;
+    font-size: var(--fs-x-small);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

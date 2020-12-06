@@ -5,6 +5,7 @@
 
 .content {
     padding-top: 31px;
+    min-height: 100vh;
 }
 
 /* first polygon at top background */
@@ -90,11 +91,12 @@ main .list-cards {
     color: var(--color-text);
     cursor: pointer;
     font-size: var(--fs-medium);
+    text-align: center;
     font-weight: 100;
     padding: 7px 0;
     width: 100%;
     max-width: 383px;
-    margin: 33px auto 49px;
+    margin: 33px auto 65px;
 }
 
 .btn-friend {
