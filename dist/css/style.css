@@ -111,8 +111,7 @@
 
 .section-1__text {
     font-size: var(--fs-x-small);
-    height: 220px;
-    /* padding-left: 10px; */
+    max-height: 220px;
     overflow: scroll;
 }
 
@@ -139,7 +138,7 @@
     width: 100%;
 }
 
-.first-form input, .second-form .friend-field {
+.first-form input{
     margin-bottom: 20px;
 }
 
@@ -169,7 +168,7 @@
 }
 
 .second-form .friend-field {
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 .second-form label {
@@ -179,8 +178,6 @@
 .second-form input:not(.btn-friend) {
     width: 100%;
 }
-
-
 
 .content__title {
     font-size: var(--fs-medium);
@@ -229,7 +226,7 @@
 }
 
 .btn-friend {
-    margin-top: 42px;
+    margin-top: 22px;
 }
 
 
