@@ -63,20 +63,24 @@
 }
 
 .nav-list {
+    text-align: center;
     width: 100%;
     max-width: 360px;
     margin: 0 auto 98px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-content: center;
+    gap: 20px;
+}
+
+.nav-item {
+    width: 100%;
 }
 
 .nav-item a {
     background-color: #fff;
     display: inline-block;
-    min-width: 160px;
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 160px;
     padding: 10px 0;
     text-align: center;
     background: #FFFFFF 0% 0% no-repeat padding-box;
